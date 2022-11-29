@@ -28,7 +28,7 @@
         </div>
 
         <div class="form-inline font-italic my-2 my-lg-0">
-            <% if (usuarioSession.getClass() == 0) { %>
+            <% if (usuarioSession.getCorreo() == "0") { %>
             <a class="nav-link" style="color: #007bff;" href="<%=request.getContextPath()%>/LoginServlet">(Iniciar Sesión)</a>
             <% } else { %>
             Bienvenido <%=usuarioSession.getNombre()%>

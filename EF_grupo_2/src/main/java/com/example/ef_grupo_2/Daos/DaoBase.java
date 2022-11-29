@@ -13,11 +13,8 @@ public class DaoBase {
             throw new RuntimeException(e);
         }
         String user= "root";
-        String pass="root";
-        //String passBD= "Iuseclashbtw";
-        //String IP = "35.247.38.109";
-        //String localhost = "localhost";
-        //String url = "jdbc:mysql://"+IP+":3306/telesystem_aa?serverTimezone=America/Lima";
+        String pass="123456";
+
         String url = "jdbc:mysql://:3306/finalgrupo2?serverTimezone=America/Lima";
         //return DriverManager.getConnection(url,user,passBD);
         return DriverManager.getConnection(url,user,pass);
