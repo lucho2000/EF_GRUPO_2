@@ -26,7 +26,7 @@ public class SessionFilter implements Filter {
 
         Usuarios usuario1 = (Usuarios) session.getAttribute("usuario");
         if(usuario1==null){
-            res.sendRedirect(req.getContextPath()+"/Login");
+            res.sendRedirect(req.getContextPath()+"/SessionServlet");
         }else{
             res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
             res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
