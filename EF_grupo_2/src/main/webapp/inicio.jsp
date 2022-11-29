@@ -52,13 +52,13 @@
         <tr>
             <td><%=i%>
             </td>
-            <td><%=service.getJobId()%>
+            <td><%=service.getIdServicio()%>
             </td>
-            <td><%=service.getJobTitle()%>
+            <td><%=service.getFecha()%>
             </td>
-            <td><%=service.getMinSalary()%>
+            <td><%=service.getTiempo()%>
             </td>
-            <td><%=service.getMaxSalary()%>
+            <td><%=service.getCosto()%>
             </td>
         </tr>
         <%
