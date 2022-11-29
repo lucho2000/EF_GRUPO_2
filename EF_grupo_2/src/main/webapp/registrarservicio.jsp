@@ -29,32 +29,17 @@
             <h2 class="create-account" style="font-family: 'Arial Black'; font-size: 20px; " align="center">Registrar Servicio</h2>
             <form method="post" action="<%=request.getContextPath()%>/ServicioServlet?accion=registrartipo">
                 <div class="form-group">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" name="nombre">
-                </div>
-                <div class="form-group">
-                    <label>Apellido</label>
-                    <input class="form-control" name="apellido" type="text"/>
-                </div>
-                <div class="form-group">
-                    <label>Correo</label>
-                    <input class="form-control" name="correo" type="email"/>
-                </div>
-                <div class="form-group">
-                    <label>Contraseña</label>
-                    <input class="form-control" name="password" type="password"/>
-                </div>
-                <div class="form-group">
-                    <label>Repetir Contraseña</label>
-                    <input class="form-control" name="passwordrepeat" type="password"/>
-                </div>
-                <div class="form-group">
-                    <label>Tipo de Usuario</label>
+                    <label>Tipo de Servicio</label>
                     <select name="tipo" class="form-control">
                         <option selected></option>
-                        <option value="1">Externo</option>
-                        <option value="2>">Interno</option>
+                        <option value="1">Impresión 3D</option>
+                        <option value="2>">Corte Láser</option>
+                        <option value="3>">Escaneo Digital 3D</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <label>Información Extra</label>
+                    <input type="text" class="form-control" name="infoextra">
                 </div>
                 <button type="submit" class="btn btn-primary">Siguiente</button>
                 <a href="<%=request.getContextPath()%>/SessionServlet" class="btn btn-danger">Cancelar</a>
